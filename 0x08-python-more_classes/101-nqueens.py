@@ -80,7 +80,7 @@ def build_solution(row, group):
         tmp0 = group.copy()
         if not group_exists(tmp0):
             solutions.append(tmp0)
-        else:
+    else:
         for col in range(n):
             a = (row * n) + col
             matches = zip(list([pos[a]]) * len(group), group)
